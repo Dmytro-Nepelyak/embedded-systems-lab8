@@ -149,6 +149,9 @@ int main(void)
 	        prevData = currentData;
 	      }
     /* USER CODE BEGIN 3 */
+	  // Оновлення логіки світлодіода для гілки feature-led
+	  HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_15);
+	  HAL_Delay(200);
   }
   /* USER CODE END 3 */
 }
